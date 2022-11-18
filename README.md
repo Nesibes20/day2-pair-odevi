@@ -1,1 +1,1 @@
-# day2-pair-odevi
+# Etiya-Akademi-pair-odevleri
