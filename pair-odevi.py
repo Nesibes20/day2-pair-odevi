@@ -1,21 +1,33 @@
-dersSayisi = int(input("Kaç tane ders notu gireceksiniz?"))
+countCourse = int(input("Ders Sayısı = "))
+courses = []
+passed = 0
+failed = 0
+fail = []
+success = []
 
-passedExams = 0
-failedExams = 0
+for i in range(0, countCourse):
 
-gecendersnotu = []
-kalandersnotu = []
-
-for i in range(dersSayisi):
-    vizeNotu = int(input(f"{i+1}. dersiniz için vize notunuzu giriniz."))
-    finalNotu = int(input(f"{i+1}. dersiniz için final ders notunuzu giriniz."))
-    toplamDersnotu = (vizeNotu * 0.4) + (finalNotu * 0.6)
-    if toplamDersnotu >= 50:
-        passedExams += 1
-        gecendersnotu.append(toplamDersnotu)
+    course = (input("ders ismi = "))
+    e1 = float(input("vize notu = "))
+    e2 = float(input("final notu = "))
+    e1y = e1.4
+    e2y = e2.6
+    totalGrade = e1y + e2y
+    if totalGrade < 50:
+        failed += 1
+        sonuc = "kaldınız."
+        fail.append({"başarısız : " : course})
     else:
-        failedExams += 1
-        kalanDersnotu.append(toplamDersnotu)
+        passed += 1
+        sonuc = "geçtiniz."
+        success.append({"başarılı : " : course})
 
-print(f"{passedExams} adet dersten geçtiniz. {failedExams} adet dersten kaldınız.")
-print(f"Geçilen ders notu : {gecendersnotu} Kalan ders notu: {kalandersnotu}")
+
+    courses.append({"ders ismi : ": course, "1. sınav notu": e1, "2. sınav notu": e2, "sonuç : ":sonuc})
+
+for i in courses:
+    print(i)
+for i in success:
+    print(i)
+for i in fail:
+    print(i)   
