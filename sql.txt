@@ -1,0 +1,26 @@
+Veri Modelleme Nedir?
+
+Veri modelleme temel olarak iş süreçlerinin gerçekleştirilmesi için üretilen yazılımların kullandıkları
+ya da bu yazılımların kullanılması ile üretilen verilerin biriktirilmesi ve yönetilmesinin planlanması ve 
+kodlanmasıdır.
+
+ER DIAGRAM
+ER Diyagramı, Varlık İlişkisi Şeması anlamına gelir, aynı zamanda ERD olarak da bilinir, bir veritabanında
+saklanan varlık kümelerinin ilişkisini gösteren bir diyagramdır. Başka bir deyişle, ER diyagramları 
+veritabanlarının mantıksal yapısını açıklamaya yardımcı olur.
+
+PRIMARY KEY Nedir?
+
+PRIMARY KEY kısıtlaması, bir tablodaki seçilen değerleri benzersiz şekilde tanımlar.
+PRIMARY KEY(birincil anahtar) olarak atanan sütunlar null değer içeremez. 
+Bir tabloda yalnızca bir Primary key olabilir ve tabloda, bu birincil anahtar bir veya birden fazla sütundan oluşabilir.
+
+FOREIGN KEY NEDİR?
+
+Bir veri tablosuna girilebilecek değerleri başka bir veri tablosundaki alanlarla ilişkilendirmeye yarar. 
+Özetle, başka bir tablonun birincil anahtarının bir diğer tablo içerisinde yer almasıdır.
+
+Unique Key NEDİR?
+
+Unique Key (tekil anahtar), yer aldığı tablo içerisinde bir değeri sadece bir kere alır. 
+İlgili değerin tekrar atanmasına izin verilmez.
