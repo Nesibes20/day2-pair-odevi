@@ -1,0 +1,47 @@
+POSTRESQL VERİ TİPLERİ
+
+**Sayısal Veri tipleri**
+Sayısal veri tipleri, tam ya da rasyonel sayılar gibi farklı büyüklükte (magnitude) 
+ve hassasiyette (precision) veri türlerini saklamaya yararlar.
+
+Veri Tipi	Boyut	Tanım	                                   Değer aralığı
+smallint (int2)	2 byte	small-range integer	                  -32768 ile +32767 aralığındaki tam sayılar
+integer (int4)	4 byte	typical choice for integer                -2147483648 ile +2147483647 aralığındaki tam sayılar
+bigint (int8)	8 byte	large-range integer	                  -9223372036854775808 ile +9223372036854775807 aralığındaki tam sayılar
+decimal	değişken	Kullanıcı tanımlı hassasiyet, mutlak       Ondalık ayracı öncesinde 131072 haneye kadar sonrasında 16383 haneye kadar
+numeric	değişken	Kullanıcı tanımlı hassasiyet, mutlak       Ondalık ayracı öncesinde 131072 haneye kadar sonrasında 16383 haneye kadar
+real	         4 byte	değişken ondalık hassasiyeti,mutlak değil  6 ondalık hane
+double precision 4 byte	değişken ondalık hassasiyeti, mutlak değil 15 ondalık hane
+
+**Metinsel Veri Tipleri**
+
+Veri Tipi	                        Tanım
+character varying(n), varchar(n)	değişken uzunluklu sabit boyutlu
+character(n), char(n)	                sabit uzunluklu, boş alanlar boşlukla doldurulur
+text	                                değişken sınırsız uzunluklu
+
+**Geometrik Veri Tipleri**
+
+Name	Storage Size	Description	        Representation
+point	16 byte	       düzlemde bir nokta	(x,y)
+line	32 byte	       sonsuz doğru	        {A,B,C}
+lseg	32 byte	       sonlu doğru parçası	((x1,y1),(x2,y2))
+box	32 byte	       dikdörtgensel kutu	((x1,y1),(x2,y2))
+path	16+16n byte    kapalı hat (polygon)	((x1,y1),…)
+path	16+16n byte    açık hat (polyline)	[(x1,y1),…]
+polygon	40+16n byte    polygon	                ((x1,y1),…)
+circle	24 byte	çember	<(x,y),r>              merkezin koordinatları ve yarıçap
+
+**Boolean Veri Tipleri**
+
+True,False ve bilinmeyen durumlarda kullanılmak üzere de NULL değerlerini alabilir.
+Bu veri tipinde true yerine yes, on, t ya da 1 kabul edilebilirken false yerine de no, off, f ve 0 kabul edilmektedir. Büyük - küçük hassasiyeti aranmaz.
+
+**Network Veri Tipleri**
+
+Veri Tipi	Boyut	        Tanım
+cidr	       7 - 19 byte	IPv4 ve IPv6 ağlar
+inet	       7 - 19 byte      IPv4 ve IPv6 ağlar / sunucular
+macaddr	       6 byte	        MAC adresleri
+macaddr8       8 byte	        MAC adresleri (EUI-64 formatı)
+
