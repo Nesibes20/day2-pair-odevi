@@ -1,0 +1,28 @@
+Summary: Günlük sıcaklık verilerinin örneklem sayısına göre gruplandırılması
+
+Acceptance Criteria
+Yapılan işlem sadece o takvim günü için gerçekleştirilecektir.
+Maddeler halinde verilen işlemleri gerçekleştiren bir adet ‘buton’ tasarlanmalıdır.
+Veri sayısı ve örneklem sayısı boş bırakılmamalı ve bir tam sayı olmalıdır. 
+Herhangi birinin eksik olması ve tam sayı değerinde olmaması durumunda ‘buton’ pasif olmalıdır. 
+
+
+MADDELER
+
+1- Şehirlerin bilgileri tutulacak ve alfabetik olarak sıralanacaktır. 
+2- Örneklem sayısının değeri boş olmamalıdır.
+3- Örneklem sayısı tam sayı değer almalıdır.
+4- Grup isimleri grup1 grup2.. grup9 şeklinde olacaktır.
+5- Gruplandırma ve örneklem sayısı kullanıcının isteğine göre değiştirilebilmelidir. 
+6- Mevcut verilerin sayısı örneklem değerine tam bölünmediği takdirde kalan şehirler yeni sayfaya yazılabilmelidir.
+  Örneğin: Örneklem sayısı, 27 şehir için verilmiştir. Gruplandırma ölçütü olarak 6 istenmiştir. 
+  Bu durumda grup1 için örneklem sayısı: 6, grup2 için:6, grup3 için:6, grup4 için:6, grup7 için ise:3 olmaktadır.
+7- Yeni sayfa düzeni üç kolondan oluşturulmalıdır. Kolon isimleri, 'Şehir Adı', ‘En Yüksek Sıcaklık’,'En Düşük Sıcaklık', şeklinde olmalıdır.
+8- En yüksek ve en düşük sıcaklıklar varsayılan olarak gelecek ve değerler 'Celcius(C)’ cinsinden olacaktır.
+9- Her yeni takvim günü için veriler takvim günü içinde gruplandırılıp tutulacaktır. Örneğin: 06.12.2022 içerisinde yapılan gruplandırılmalar 
+   o takvim günü içerisinde kalacaktır. 07.12.2022 tarihinde verilen verilere ve örneklem sayısına göre yeniden gruplandırma yapılacaktır.
+10- Eski veriler silinmemeli ve üzerine yeni veri yazılmamalıdır. Tarihlerine göre ilgili tabloda saklanmalıdır
+
+
+
+
